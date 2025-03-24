@@ -27,7 +27,7 @@ const alumnoId = urlParams.get('id'); // Obtiene el valor del parámetro "id"
 
 console.log(alumnoId); // Verás "1" si el parámetro id es 1
 
-fetch(`http://localhost:3000/api/certificados/${alumnoId}`)
+fetch(`https://proyectoqr-backendapi.onrender.com/api/certificados/${alumnoId}`)
   .then(response => response.json())
   .then(data => {
     console.log(data); // Muestra los datos obtenidos
