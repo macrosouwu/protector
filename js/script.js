@@ -58,6 +58,7 @@ fetch(`https://proyectoqr-backendapi.onrender.com/api/certificados/${alumnoId}`)
     document.getElementById("curso-alumno").textContent = data.alumno.clave_curso;
     document.getElementById("inicio-alumno").textContent = fechaIniFormateada;
     document.getElementById("fin-alumno").textContent = fechaFinFormateada;
+    document.getElementById("nombre-curso").textContent = data.alumno.nombre_curso;
 
 
     if (!data.materias || data.materias.length === 0) {
