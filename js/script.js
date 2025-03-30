@@ -2,6 +2,13 @@ console.log("hola mundo !");
 
 const inputs = document.querySelectorAll(".input")
 
+function scrollToTop() {
+  document.getElementById("certificados-container").scrollIntoView({ behavior: "smooth" });
+}
+function scrollToForm() {
+  document.getElementById("main-formcontainer").scrollIntoView({ behavior: "smooth" });
+}
+
 function focusFunc(){
     let parent = this.parentNode;
     parent.classList.add("focus");

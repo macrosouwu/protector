@@ -391,7 +391,7 @@ textarea {
 .main-formcontainer {
     position: relative;
     width: 100%;
-    background-color: #1B5E20;
+    background: linear-gradient(to top, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px;
     min-height: 90vh;
     overflow: hidden;
