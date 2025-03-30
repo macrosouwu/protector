@@ -71,13 +71,13 @@ section {
 
 .hero h1 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 42px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .datos-container {
-    margin-top: 50px;
+    margin-top:60px;
     background-color: #F2F2F2;
 
 }
@@ -85,7 +85,7 @@ section {
 .datos-subcontainer {
     display: flex;
     width: 80%;
-    padding: 50px;
+    padding: 15px 60px;
     margin: 0 auto;
 }
 
@@ -227,6 +227,58 @@ table {
 .nombre-curso {
     font-weight: 300;
     font-size: 18px;
+}
+
+.barra-buscar {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    
+}
+
+.barra-buscar form {
+    gap: 0px;
+    background-color: #fff;
+    width: 70%;
+    height: 48px;
+    display: flex;
+    
+}
+
+.barra-buscar form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.barra-buscar button {
+    background: #2b7e34;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.barra-buscar button:hover {
+    background-color: #a8e6a3; /* Verde claro de fondo */
+    color: #2b7e34; /* Verde oscuro para el texto */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.barra-buscar input {
+    padding: 5px;
+    cursor: auto;
+}
+
+.fa-solid {
+    align-self: center;
+    padding: 10px 20px;
+    color: #777;
 }
 
 
