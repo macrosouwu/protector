@@ -65,6 +65,7 @@ function buscarAlumno(alumnoId = null) {
             const fechaFinFormateada = new Date(data.alumno.fecha_fin).toLocaleDateString("es-MX");
 
             // Asigna valores a la tabla
+            document.getElementById("pnombre-alumno").textContent = data.alumno.nombre_alumno;
             document.getElementById("nombre-alumno").textContent = data.alumno.nombre_alumno;
             document.getElementById("calificacion-alumno").textContent = data.alumno.cali;
             document.getElementById("grupo-alumno").textContent = data.alumno.clave_grupo;
