@@ -36,7 +36,9 @@ inputs.forEach(input => {
 // Obtener el ID desde los parámetros de consulta
 
 // Selecciona el campo de búsqueda
-const searchInput = document.getElementById("search-bar"); 
+const searchInput = document.getElementById("search-bar");
+console.log(searchInput);
+
 
 // Función para obtener el ID de la URL
 function obtenerIdDesdeURL() {
