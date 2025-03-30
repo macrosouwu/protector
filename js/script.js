@@ -1,5 +1,9 @@
 console.log("hola mundo !");
 
+// Hacemos que la busqueda por id no nos envie al principio de la pagina al dar enter
+
+
+
 const inputs = document.querySelectorAll(".input")
 
 function scrollToTop() {
@@ -20,6 +24,8 @@ function blurFunc(){
     }
     
 }
+
+
 
 inputs.forEach(input => {
     input.addEventListener("focus", focusFunc);
@@ -68,6 +74,7 @@ function buscarAlumno(alumnoId = null) {
             document.getElementById("nombre-curso").textContent = data.alumno.nombre_curso;
 
             // Verifica y muestra materias
+            document.getElementById("certificados-container").scrollIntoView({ behavior: "smooth" });
             const tablaBody = document.getElementById("tabla-body");
             if (!tablaBody) {
                 console.error("Error: No se encontró una tabla con id tabla-body");
