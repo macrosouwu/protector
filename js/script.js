@@ -43,13 +43,19 @@ console.log(searchInput);
 // Función para obtener el ID de la URL
 function obtenerIdDesdeURL() {
     const urlParams = new URLSearchParams(window.location.search);
+    console.log("obteniendourl...");
+    
     return urlParams.get('id'); // Obtiene el valor del parámetro "id"
 }
 
 // Función para buscar al alumno
 function buscarAlumno(alumnoId = null) {
+    console.log("ejecutando func...");
     alumnoId = alumnoId || searchInput.value.trim(); // Usa el ID de la URL o del input
-
+    
+    
+    console.log(searchInput.value);
+    
     if (!alumnoId) return; // Si no hay ID, no hace la solicitud
 
     fetch(`https://proyectoqr-backendapi.onrender.com/api/certificados/${alumnoId}`)
@@ -105,11 +111,14 @@ function buscarAlumno(alumnoId = null) {
 }
 
 // Evento para buscar al presionar "Enter"
-searchInput.addEventListener("keypress", function(event) {
+searchInput.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
+        event.preventDefault(); // Evita que se recargue la página en formularios
+        console.log("Enter presionado en searchInput... ejecutando buscarAlumno()");
         buscarAlumno();
     }
 });
+
 
 // Verificar si hay un ID en la URL y hacer la búsqueda automáticamente
 const idDesdeURL = obtenerIdDesdeURL();
